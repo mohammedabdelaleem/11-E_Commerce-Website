@@ -1,0 +1,125 @@
+header.flex {
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10vw; /*left , right*/
+  padding-top: 1.2rem;
+}
+
+/*
+======================= 
+right header section
+=======================
+*/
+header.flex .sign_in {
+    margin-inline: 1rem;
+
+
+    
+}
+
+header.flex .sign_in , 
+header.flex .register {
+    border: 1px solid var(--bodyFont);
+    padding: .44rem 1.1rem;
+    border-radius: 55px;
+    font-size: 1rem;
+    font-weight: 540;
+
+    transition: all .3s;
+}
+
+
+header.flex .sign_in:hover, 
+header.flex .register:hover {
+    color: var(--BGColorOnHover);
+background-color: var(--bodyFont);
+}
+
+.cart {
+    border: 1px solid var(--bodyFont);
+    padding: .44rem .9rem;
+    border-radius: 55px;
+    font-size: .9rem;
+    font-weight: 200;
+    color: var(--BGColorOnHover);
+background-color: var(--bodyFont);
+
+
+position: relative;
+}
+
+.num_products {
+    border: 1px solid red;
+    padding: .1rem .2rem .2rem .2rem ;
+    border-radius: 50%;
+    color: var(--bodyBG);
+    background-color: rgb(255, 19, 19);
+    font-weight: 500;
+
+    position: absolute;
+    top: -7px;
+
+}
+
+
+/*
+======================= 
+right header section
+=======================
+*/
+
+.icon-shopping_bag {
+font-size: 2rem;
+
+position: relative;
+
+}
+
+.logo {
+flex-direction: column;
+
+}
+
+.logo_main_title {
+    font-size: 1.7rem;
+    font-weight: 500;
+
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    
+}
+
+.shopping {
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 1.3px;
+}
+
+
+/*
+======================= 
+Resposivity
+=======================
+*/
+
+@media (width < 600px) {
+    
+.logo {
+    display: none;
+}
+
+
+header.flex {
+    justify-content: center;
+    padding-inline: 0;
+
+}
+    
+.links { /*for so much little screens*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+}
