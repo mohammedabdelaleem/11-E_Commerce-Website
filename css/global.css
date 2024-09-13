@@ -107,33 +107,3 @@ a:hover, button:hover {
 }
 
 
-
-/*=======================
-         main
-======================*/
-
-
-
-.main_container {
-  height: calc(100vh - 80px);
-
-  justify-content: center;
-  align-items: center;
-}
-
-main {
-
-width: fit-content;
-
-}
-
-.btn_shopnow {
-  border: 1px solid var(--bodyFont);
-  color: var(--bodyBG);
-  background-color: var(--bodyFont);
-  border-radius: 5px;
-  padding-block: .32rem;
-  padding-inline: 1rem;
-
-}
-

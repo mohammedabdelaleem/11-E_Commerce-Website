@@ -1,0 +1,65 @@
+div.top_img {
+  height: 100vh;
+  background-image: url("../imgs/bgi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  position: relative;
+}
+
+@media (width < 1000px) {
+  div.top_img {
+    background-position: left;
+  }
+}
+
+/*=======================
+   section.container
+======================*/
+
+section.content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10%;
+
+  
+ &  .life_style {
+   font-size: 1.5rem;
+   letter-spacing: .09rem;
+   font-weight: 444;
+ }
+
+
+ & .men {
+    font-size: 2.02rem;
+    letter-spacing: .09rem;
+    font-weight: 800;
+}
+
+& .sale {
+    font-size: 2.02rem;
+    letter-spacing: .09rem;
+    font-weight: 800;
+}
+
+& .free_shipping  {
+    font-size: 1.02rem;
+    letter-spacing: .09rem;
+    font-weight: 400;
+
+}
+
+& .btn_shopnow {
+  border: 1px solid var(--bodyFont);
+  color: var(--bodyBG);
+  background-color: var(--bodyFont);
+  border-radius: 5px;
+  padding-block: 0.32rem;
+  padding-inline: 1rem;
+}
+
+
+}
+
