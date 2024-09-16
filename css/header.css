@@ -2,8 +2,13 @@ header.flex {
   justify-content: space-between;
   align-items: center;
   padding-inline: 10vw; /*left , right*/
-  padding-top: 1.2rem;
+  padding-top: .6rem;
+
+border-radius: 0 0 .6rem .6rem; 
+
 }
+
+
 
 /*
 ======================= 
@@ -50,14 +55,15 @@ position: relative;
 
 .num_products {
     border: 1px solid red;
-    padding: .1rem .2rem .2rem .2rem ;
+    padding: .2rem .3rem  ;
+
     border-radius: 50%;
     color: var(--bodyBG);
-    background-color: rgb(255, 19, 19);
-    font-weight: 500;
-
+    background-color: rgb(227, 18, 18);
+    font-weight: 550;
     position: absolute;
-    top: -7px;
+    top: -10px;
+    right: 0px;
 
 }
 

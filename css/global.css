@@ -10,6 +10,10 @@ Colors
     --BGColorOnHover : #9fc5ef;
     --icon : #40464d;
     --footer_color : #1b1b1b;
+    --blue_btn: #1976d2;
+    --white : #fff;
+    --red_btn :  #e41d43;
+    --border_buttom : rgb(227, 227, 227);
     --Paper-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -94,11 +98,18 @@ a, button {
 
 
 a:active, button:active { 
-    transform: scale(0.9);
+     scale: 0.9;
 }
 
 a:hover, button:hover { 
    cursor: pointer;
+}
+
+
+button:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+   scale: 1;
 }
 
 

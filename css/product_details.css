@@ -1,0 +1,147 @@
+/*
+==============================
+Body : Product Details
+=============================
+*/
+
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto 1fr auto;
+}
+
+/*
+==============================
+Header : Product Details
+=============================
+*/
+
+header {
+  background-color: var(--footer_color);
+  padding-block: 0.6rem;
+}
+
+.logo,
+.logo_main_title,
+.icon {
+  color: var(--bodyBG);
+}
+
+.logo .icon {
+  font-size: 1.8rem;
+}
+
+.shopping {
+  font-weight: 300;
+}
+
+.logo:hover {
+  scale: 0.9;
+}
+
+.cart {
+  border: 1px solid var(--bodyFont);
+  padding: 0.44rem 0.9rem;
+  border-radius: 55px;
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--BGColorOnHover);
+  background-color: var(--bodyFont);
+}
+
+header.flex .links .register:hover,
+header.flex .links .sign_in:hover {
+  border: 1px solid rgb(186, 197, 32, 0.2);
+  padding: 0.5rem 1.3rem;
+  background-color: rgb(73, 73, 160, 0.3);
+}
+
+header.flex .links .cart:hover {
+  border: 1px solid rgb(152, 154, 189, 0.2);
+  padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+  background-color: rgb(73, 73, 160, 0.3);
+}
+
+/*
+==============================
+article : Product Details
+=============================
+*/
+
+main.flex {
+  max-width: 800px;
+  box-shadow: 0px -1px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0.4rem;
+background-color: var(--white);
+  & img {
+    width: 40%;
+    height: auto;
+    border-radius: 0.4rem 0 0 0.4rem;
+  }
+
+  & div.product_details {
+    margin-inline: 1.1rem;
+    margin-block: 1.3rem;
+  }
+
+  & .product_details .product_description {
+    margin-block: 1.2rem;
+    line-height: 1.6rem;
+    text-align: left;
+  }
+
+  & .product_details .product_title_price .product_title {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+
+  & .product_details div.product_title_price {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .product_details div.product_title_price {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .product_details .btn_add_to_cart {
+    border: 1px solid blue;
+    border-radius: 0.4rem;
+    color: var(--bodyBG);
+    background-color: rgb(60, 60, 246);
+    padding: 6px 8px;
+    font-size: 0.99rem;
+  }
+}
+
+
+
+
+@media (max-width : 800px) {
+
+    main.flex {
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+
+      
+  & img {
+    width: 260px;
+    margin-inline: auto;
+  }
+
+   .product_details {
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
+  }
+
+    }
+
+
+
+
+
+
+}

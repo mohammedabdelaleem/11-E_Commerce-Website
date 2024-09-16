@@ -62,6 +62,7 @@ section.content {
   }
 }
 
+
 /*=======================
   main (products)
 ======================*/
@@ -83,11 +84,14 @@ main .main_header {
   margin-block: 1.7rem;
 }
 
+
 section.articles {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2.5rem 1.5rem;
 
+
+  
   & article.card {
     /* width: 30%; */
     width: 266px;
@@ -110,7 +114,7 @@ section.articles {
   & .card a .article_img {
     width: 100%;
     height: auto;
-    border-bottom: 4px solid rgb(227, 227, 227);
+    border-bottom: 4px solid var(--border_buttom);
     border-radius: 5px 5px 0 0;
   }
 
@@ -142,7 +146,7 @@ section.articles {
   }
 
   & .card .buttom_article .btn_add_to_cart {
-    border: 1px solid blue;
+    border: 1px solid rgb(60, 60, 246);
     border-radius: 0.4rem;
     color: var(--bodyBG);
     background-color: rgb(60, 60, 246);

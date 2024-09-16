@@ -1,0 +1,207 @@
+
+/*
+==============================
+Body : Product Details
+=============================
+*/
+
+body {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-rows:  auto 1fr auto;
+}
+
+
+/*
+==============================
+Header : 
+=============================
+*/
+
+header {
+   
+    background-color: var(--footer_color);
+    padding-bottom: 0.4rem;
+}
+
+.logo, 
+.logo_main_title ,
+.icon {
+    color: var(--bodyBG);
+}
+
+.logo .icon {
+    font-size: 1.8rem;
+}
+
+.shopping {
+    font-weight: 300;
+
+}
+
+
+.logo:hover  {
+scale: .9;
+}
+
+header nav a.cart {
+    border: 1px solid var(--bodyFont);
+    padding: .44rem .9rem;
+    border-radius: 55px;
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--BGColorOnHover);
+    background-color: var(--bodyFont);
+
+}
+
+header.flex .links .register:hover , 
+header.flex .links .sign_in:hover {
+
+    border: 1px solid rgb(186, 197, 32, .2);
+    padding: 0.5rem 1.3rem;
+    background-color: rgb(73, 73, 160,.3);
+}
+
+header.flex .links .cart:hover {
+    border: 1px solid rgb(152,154,189, .2); 
+    padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+    background-color: rgb(73, 73, 160,.3);
+}
+
+
+
+/*
+==============================
+Section : orders
+=============================
+*/
+
+section.orders {
+
+/*
+==============================
+order : order
+=============================
+*/
+    & .order.flex {
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: var(--Paper-shadow);
+        border-top: .16rem solid var(--blue_btn);
+        border-radius: 8px;
+        background-color: var(--white);
+        font-weight: 500;
+        max-width: 600px;
+
+        margin-top: 1.5rem;
+        margin-inline: auto;
+
+
+        &  .icon-trash {
+            font-size: 1.4rem;
+            color: var(--red_btn);
+            padding: 2.5%;
+        }
+
+        & .price {
+            font-size: 1.1rem;
+            color: var(--bodyFont);
+
+        }
+
+        & h2 {
+        font-weight: 550;
+
+        }
+
+
+
+        & .counter.flex {
+            gap: 8px;
+            color: var(--blue_btn);  
+            font-size: 1rem;
+
+            & .icon-minus, 
+            & .icon_plus {
+                padding: 3px;
+            }
+
+
+            & .icon-number {
+                    font-size: 2rem;
+            }
+        }
+    }
+
+}
+
+
+    /*
+==============================
+clear button
+=============================
+*/
+
+.clear_btn {
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--red_btn);
+    color: var(--white);
+    padding: .3rem .55rem;
+    border-radius: .6rem;
+
+    margin-block: 1.3rem;
+    margin-inline: auto;
+}
+
+
+
+   /*
+==============================
+section summary
+=============================
+*/
+
+section.summary {
+    width: 240px;
+background-color: var(--white);
+box-shadow: var(--Paper-shadow);
+margin-inline: auto;
+
+& div.flex {
+    justify-content: space-between;
+    
+        border-top: .19rem solid var(--border_buttom);
+
+        padding-inline: .5rem;
+        padding-block: .6rem;
+        font-weight: 450;
+    }
+
+
+& .checkout {
+
+    width: 100%;
+    overflow: auto;
+    border-radius: 0.1rem;
+    color: var(--bodyBG);
+    background-color: var(--blue_btn);
+    padding: 0.6rem 0;
+    opacity: .7;
+}
+
+& .please_signin {
+    color: var(--red_btn);
+    opacity: .8;
+    padding: 0.6rem;
+
+}
+}
+
+
+
+
+

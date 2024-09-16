@@ -14,7 +14,7 @@ footer {
       text-transform: capitalize;
     }
   
-    & p span{
+    & p a{
       color: rgb(232, 61, 61);
     }
   
