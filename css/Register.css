@@ -1,0 +1,79 @@
+
+/*
+=========================
+body
+=========================
+
+*/
+
+body {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  }
+
+/*
+=========================
+header
+=========================
+
+*/
+
+header.flex {
+  align-items: center;
+}
+
+.icon {
+  color: var(--white);
+}
+
+.icon-shopping_bag {
+    font-size: 1.9rem;
+
+}
+
+.logo_main_title {
+  all: unset;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p.shopping {
+  font-size: 1rem;
+}
+
+header.flex .links .register:hover , 
+header.flex .links .sign_in:hover {
+
+    border: 1px solid rgb(186, 197, 32, .2);
+    padding: 0.5rem 1.3rem;
+    background-color: rgb(73, 73, 160,.3);
+}
+
+header.flex .links .cart {
+    border: 1px solid rgb(152,154,189, .2); 
+    padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+    background-color: rgba(38, 38, 199, 0.3);
+
+    transition: all .2s;
+}
+
+header.flex .links .cart:hover {
+    padding: 0.5rem 1.3rem;}
+
+    /*
+=========================
+main content : form
+=========================
+
+*/
+  
+@media (max-width : 550px) {
+
+footer p{
+    font-size: .8rem;
+}
+
+
+}
+ 

@@ -3,14 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
     <link
     rel="shortcut icon"
     href="../imgs/shopping_bag.svg"
     type="image/x-icon"
   />
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../icons/style.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/Register.css">
+
 </head>
-<body>
-    Register
-</body>
+
+<body style=
+"height: 100vh;
+display: grid;
+grid-template-rows: auto 1fr auto;
+align-items: center;" 
+class="text-center text-bg-dark">
+
+
+  <header class="flex">
+    <a href="../index.html" class=" logo flex">
+
+      <div class="logo_brand flex">
+        <i class="icon icon-shopping_bag"></i>
+        <span class="logo_main_title">AWF</span>
+      </div>
+
+      <p class="shopping">shopping</p>
+    </a>
+
+    <nav class="links">
+      <a class="cart icon icon-cart-plus" href="">
+        $0.00
+
+        <span class="num_products">3</span>
+      </a>
+      <a class="sign_in icon icon-sign-in" href="./signIn.html"> Sign In</a>
+      <a class="border register icon icon-person_add_alt_1" href="#"> Register</a>
+    </nav>
+  </header>
+
+
+<main class="px-3" style=" max-width: 550px;">
+ 
+  <form style="text-align: left;">
+
+    <div class="mb-4">
+      <label for="username"  class="form-label">Username</label>
+      <input type="email" class="form-control" id="username" autofocus aria-describedby="emailHelp">
+    </div>
+
+    <div class="mb-4">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+
+
+    <div class="mb-4">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Account</button>
+  </form>
+
+
+</main>
+
+
+<footer style="background-color: transparent;">
+  <p>
+    Designed and developed by
+    <a
+      target="_blank"
+      href="https://www.linkedin.com/in/mohammed-abdelaleem-b100992a3/"
+      >eng Mohammed abdelaleem</a
+    >&#160;&#169;&#160;2024
+  </p>
+</footer>
+
 </html>

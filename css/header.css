@@ -2,13 +2,10 @@ header.flex {
   justify-content: space-between;
   align-items: center;
   padding-inline: 10vw; /*left , right*/
-  padding-top: .6rem;
+  padding-top: 0.6rem;
 
-border-radius: 0 0 .6rem .6rem; 
-
+  border-radius: 0 0 0.6rem 0.6rem;
 }
-
-
 
 /*
 ======================= 
@@ -16,57 +13,50 @@ right header section
 =======================
 */
 header.flex .sign_in {
-    margin-inline: 1rem;
-
-
-    
+  margin-inline: 1rem;
 }
 
-header.flex .sign_in , 
+header.flex .sign_in,
 header.flex .register {
-    border: 1px solid var(--bodyFont);
-    padding: .44rem 1.1rem;
-    border-radius: 55px;
-    font-size: 1rem;
-    font-weight: 540;
+  border: 1px solid var(--bodyFont);
+  padding: 0.44rem 1.1rem;
+  border-radius: 55px;
+  font-size: 1rem;
+  font-weight: 540;
 
-    transition: all .3s;
+  transition: all 0.3s;
 }
 
-
-header.flex .sign_in:hover, 
+header.flex .sign_in:hover,
 header.flex .register:hover {
-    color: var(--BGColorOnHover);
-background-color: var(--bodyFont);
+  color: var(--BGColorOnHover);
+  background-color: var(--bodyFont);
 }
 
 .cart {
-    border: 1px solid var(--bodyFont);
-    padding: .44rem .9rem;
-    border-radius: 55px;
-    font-size: .9rem;
-    font-weight: 200;
-    color: var(--BGColorOnHover);
-background-color: var(--bodyFont);
+  border: 1px solid var(--bodyFont);
+  padding: 0.44rem 0.9rem;
+  border-radius: 55px;
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: var(--BGColorOnHover);
+  background-color: var(--bodyFont);
 
-
-position: relative;
+  position: relative;
 }
 
 .num_products {
-    border: 1px solid red;
-    padding: .2rem .3rem  ;
+  border: 1px solid red;
+  padding: 0.2rem 0.3rem;
 
-    border-radius: 50%;
-    color: var(--bodyBG);
-    background-color: rgb(227, 18, 18);
-    font-weight: 550;
-    position: absolute;
-    top: -10px;
-    right: 0px;
-
+  border-radius: 50%;
+  color: var(--bodyBG);
+  background-color: rgb(227, 18, 18);
+  font-weight: 550;
+  position: absolute;
+  top: -10px;
+  right: 0px;
 }
-
 
 /*
 ======================= 
@@ -75,33 +65,26 @@ right header section
 */
 
 .icon-shopping_bag {
-font-size: 2rem;
+  font-size: 2rem;
 
-position: relative;
-
+  position: relative;
 }
 
 .logo {
-flex-direction: column;
-
+  flex-direction: column;
 }
 
 .logo_main_title {
-    font-size: 1.7rem;
-    font-weight: 500;
+  font-size: 1.7rem;
+  font-weight: 500;
 
-    position: absolute;
-    right: -5px;
-    bottom: 0;
-    
 }
 
 .shopping {
-    text-align: center;
-    font-size: 1.1rem;
-    letter-spacing: 1.3px;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1.3px;
 }
-
 
 /*
 ======================= 
@@ -110,22 +93,67 @@ Resposivity
 */
 
 @media (width < 600px) {
-    
-.logo {
+  .logo {
     display: none;
-}
+  }
 
-
-header.flex {
+  header.flex {
     justify-content: center;
     padding-inline: 0;
+  }
 
-}
-    
-.links { /*for so much little screens*/
+  .links {
+    /*for so much little screens*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+  }
 }
+
+/*
+======================= 
+when scroll-down 
+======================= 
+*/
+
+header.scroll-down {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding-bottom: .5rem;
+  z-index: 100;
+
+background-color: var(--footer_color);
+color: var(--white);
+
+
+
+& .logo .icon-shopping_bag{
+color: var(--white);
+font-size: 1.66rem;
+}
+
+& .logo .flex .logo_main_title{
+    font-size: 1.5rem;
+}
+
+& .logo .shopping {
+font-size: 1rem;
+letter-spacing: .05rem;
+}
+
+& .icon {
+    color: var(--white);
+}
+
+.cart {
+    border: 1px solid var(--bodyFont);
+    color: var(--BGColorOnHover);
+    background-color: rgb(1, 1, 75);
+  
+
+  }
+
 }
